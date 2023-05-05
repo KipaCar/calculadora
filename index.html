@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./style/styles.css">
+  <!-- <link rel="stylesheet" href="./style/theme.css"> -->
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+  </style>
+</head>
+<body>
+<div class="calculadora">
+  <div class="calculadora__text">
+    <span class="calculadora__calc">calc</span>
+    <div class="calculadora__input">
+      <div class="calculadora__number-theme ">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+    <div class="calculadora__radio">
+      <span class="calculadora__theme theme">Theme</span>
+      <input type="radio" class="calculadora__theme--uno button" id="theme-uno"  checked>
+      <input type="radio"class="calculadora__theme--dos button" id="theme-dos" >
+      <input type="radio"class="calculadora__theme--tres button" id="theme-tres" >
+    </div>
+  </div>
+</div>
+  
+  <div class="calculadora__resultado">
+    <span id="resultado-operaciones"class="calculadora__resultado--operaciones" > </span>
+    <span id="resultado-final" class="calculadora__resultado--final" ></span>
+  </div>
+  <form class="formulario" action="" name="calculadora">
+    <div  id="botones-generales" class="formulario__bloque">
+      <button id="7" class="formulario__boton  formulario__boton--blanco" >7</button>
+      <button id="8" class="formulario__boton  formulario__boton--blanco" >8</button>
+      <button id="9" class="formulario__boton  formulario__boton--blanco" >9</button>
+      <button id="del"class="formulario__boton formulario__boton--azul">DEL</button>
+    </div>
+    <div  id="botones-generales" class="formulario__bloque">
+      <button id="4" class="formulario__boton formulario__boton--blanco" >4</button>
+      <button id="5" class="formulario__boton formulario__boton--blanco" >5</button>
+      <button id="6" class="formulario__boton formulario__boton--blanco" >6</button>
+      <button id="sumar" class="formulario__boton formulario__boton--blanco" >+</button>
+    </div>
+    <div  id="botones-generales" class="formulario__bloque" >
+      <button id="1" class="formulario__boton formulario__boton--blanco" >1</button>
+      <button id="2" class="formulario__boton formulario__boton--blanco" >2</button>
+      <button id="3" class="formulario__boton formulario__boton--blanco" >3</button>
+      <button id="-" class="formulario__boton formulario__boton--blanco" >-</button>
+    </div>
+    <div id="botones-generales"  class="formulario__bloque">
+      <button id="."  class="formulario__boton formulario__boton--blanco" >.</button>
+      <button id="0" class="formulario__boton formulario__boton--blanco" >0</button>
+      <button id="/" class="formulario__boton formulario__boton--blanco" >/</button>
+      <button id="x" class="formulario__boton formulario__boton--blanco" >x</button>
+    </div>
+    <div  id="botones-generales" class="formulario__igual">
+      <button id="reset"class="formulario__boton formulario__boton--azul">RESET</button>
+      <button id="igual"class="formulario__boton formulario__boton--rojo" >=</button>
+    </div>
+
+  </form>
+
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="javaScript/main.js" text="java/script"></script>
+</body>
+</html>

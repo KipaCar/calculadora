@@ -1,0 +1,73 @@
+// ## Colors
+
+// ### Theme 1
+
+// #### Backgrounds
+
+$veryDarkDesaturatedMainBackground: hsl(222, 26%, 31%);
+$veryDarkDesaturatedToggleBackground: hsl(223, 31%, 20%);
+$veryDarkDesaturatedScreenBackground: hsl(224, 36%, 15%);
+
+// #### Keys
+
+$desaturatedDarkBlue-key-background: hsl(225, 21%, 49%);
+$desaturatedDarkBlue-key-shadow: hsl(224, 28%, 35%);
+
+$redKeyBackgroundToggle: hsl(6, 63%, 50%);
+$darkRed-key-shadow: hsl(6, 70%, 34%);
+
+$lightGrayishOrangeBackground: hsl(30, 25%, 89%);
+$grayishOrangeKeyShadow: hsl(28, 16%, 65%);
+
+// #### Text
+
+$veryDarkGrayishBlue: hsl(221, 14%, 31%);
+$white: hsl(0, 0%, 100%);
+
+// ### Theme 2
+
+// #### Backgrounds
+
+$lightGrayMmainBackground: hsl(0, 0%, 90%);
+$grayishRedToggleBackgroundKeypadBackground: hsl(0, 5%, 81%);
+$veryLightGrayScreenBackground: hsl(0, 0%, 93%);
+
+// #### Keys
+
+$darkModerateCyanKeyBackground: hsl(185, 42%, 37%);
+$veryDarkCyanKeyShadow: hsl(185, 58%, 25%);
+
+$orangeKeyBackgroundToggle: hsl(25, 98%, 40%);
+$darkOrangeKeyShadow: hsl(25, 99%, 27%);
+
+$lightGrayishYellowKeyBackground: hsl(45, 7%, 89%);
+$darkGrayishOrangeKeyShadow: hsl(35, 11%, 61%);
+
+// #### Text
+
+$veryDarkGrayishYellow: hsl(60, 10%, 19%);
+$whiteText: hsl(0, 0%, 100%);
+
+// ### Theme 3
+
+// #### Backgrounds
+
+$veryDarkVioletMainBackground: hsl(268, 75%, 9%);
+$veryDarkViolet : hsl(268, 71%, 12%);
+// (toggle background, keypad background, screen background)
+// #### Keys
+
+$darkVioletKeyBackground: hsl(281, 89%, 26%);
+$vividMagentaKeyShadow: hsl(285, 91%, 52%);
+
+$pureCyanKeyBackgroundToggle: hsl(176, 100%, 44%);
+$softCyanKeyShadow: hsl(177, 92%, 70%);
+
+$veryDarkVioletKeyBackground: hsl(268, 47%, 21%);
+$darkMagentaKeyShadow: hsl(290, 70%, 36%);
+
+// #### Text
+
+$lightYellow: hsl(52, 100%, 62%);
+$veryDarkBlue: hsl(198, 20%, 13%);
+$whiteText: hsl(0, 0%, 100%);

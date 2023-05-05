@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+:root {
+  --mainBackground: #3a4764;
+  --toggleBackgroundKeypadBackground: #232c43;
+  --screenBackground: #182034;
+  --keyBackground: #637097;
+  --keyShadow: #404e72;
+  --keyBackgroundToggle: #d03f2f;
+  --keyShadow2: #93261a;
+  --keyBackground2: #eae3dc;
+  --keyShadow3: #b4a597;
+  --grayish: #444b5a;
+  --text1: #ffffff;
+  --text2: #1b2428;
+  --text3: #ffffff;
+  --btnKey: #404652;
+  --hoverKey: #fff;
+  --hoverKeyBorder: #CFC4B5;
+  --equal: #fff;
+  --equalHover: #FF7361;
+  --hoverDelReset: #98A6CF;
+}
+
+.theme-2 {
+  --mainBackground: #e6e6e6;
+  --toggleBackgroundKeypadBackground: #d1cccc;
+  --screenBackground: #ededed;
+  --keyBackground: #377f86;
+  --keyShadow: #1b5f65;
+  --keyBackgroundToggle: #ca5502;
+  --keyShadow2: #893901;
+  --keyBackground2: #e5e4e1;
+  --keyShadow3: #a69d91;
+  --grayish: #35352c;
+  --text1: #ffffff;
+  --text2: #1b2428;
+  --text3: #1b2428;
+  --btnKey: #424237;
+  --equal: #fff;
+  --hoverKeyBorder: #CFC4B5;
+  --hoverKey: #fff;
+  --hoverDelReset: #6AB6BE;
+  --equalHover: #FF8932;
+}
+
+.theme-3 {
+  --mainBackground: #160628;
+  --toggleBackgroundKeypadBackground: #1d0934;
+  --screenBackground: #1d0934;
+  --keyBackground: #58077d;
+  --keyShadow: #bc15f4;
+  --keyBackgroundToggle: #00e0d1;
+  --keyShadow2: #6cf9f2;
+  --keyBackground2: #341c4f;
+  --keyShadow3: #871c9c;
+  --grayish: #35352c;
+  --text1: #ffffff;
+  --text2: #ffe53d;
+  --text3: #ffe53d;
+  --btnKey: #FFFF4C;
+  --equal: #222D32;
+  --hoverKeyBorder: #A923C3;
+  --hoverKey: #664D83;
+  --hoverDelReset: #8D37B4;
+  --equalHover: #59dbd3;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--mainBackground);
+  font-family: "League Spartan", sans-serif;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 375px;
+  align-items: center;
+  margin: auto;
+}
+.calculadora__text {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  align-items: center;
+}
+.calculadora__calc {
+  color: var(--text3);
+  font-size: 1.2rem;
+}
+.calculadora__number-theme {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text3);
+}
+.calculadora__radio {
+  padding: 3px 7px;
+  background: var(--screenBackground);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap: 0.2rem;
+}
+.calculadora__theme {
+  position: absolute;
+  left: -57px;
+  color: var(--text3);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+.calculadora__theme--uno {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0;
+}
+.calculadora__theme--uno:checked {
+  background-color: var(--keyBackgroundToggle);
+  transition-duration: 500ms;
+  cursor: default;
+}
+.calculadora__theme--dos {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0;
+}
+.calculadora__theme--dos:hover {
+  transition-duration: 500ms;
+}
+.calculadora__theme--dos:checked {
+  background-color: var(--keyBackgroundToggle);
+  transition-duration: 500ms;
+  cursor: default;
+}
+.calculadora__theme--tres {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0;
+}
+.calculadora__theme--tres:checked {
+  background: var(--keyBackgroundToggle);
+  transition-duration: 100ms;
+  cursor: default;
+}
+.calculadora__resultado {
+  text-align: end;
+  color: var(--text3);
+  background-color: var(--screenBackground);
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 80%;
+  margin: 1rem;
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 94px;
+}
+.calculadora__resultado--operaciones {
+  font-size: 20px;
+  opacity: 0;
+}
+.calculadora__resultado--final {
+  font-size: 32px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.formulario {
+  background-color: var(--toggleBackgroundKeypadBackground);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.formulario__bloque {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.formulario__boton {
+  font-family: "League Spartan", sans-serif;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.formulario__boton:hover {
+  transform: translateY(2px);
+}
+.formulario__boton--blanco {
+  font-size: 32px;
+  background-color: var(--keyBackground2);
+  color: var(--text2);
+  box-shadow: 0px 4px 0px var(--keyShadow3);
+}
+.formulario__boton--blanco:hover {
+  background-color: var(--hoverKey);
+}
+.formulario__boton--azul {
+  color: var(--text1);
+  background-color: var(--keyBackground);
+  box-shadow: 0px 4px 0px var(--keyShadow);
+  padding: 1rem;
+}
+.formulario__boton--azul:hover {
+  background-color: var(--hoverDelReset);
+}
+.formulario__boton--rojo {
+  color: var(--text1);
+  background-color: var(--keyBackgroundToggle);
+  box-shadow: 0px 4px 0px var(--keyShadow2);
+  padding: 1rem;
+}
+.formulario__boton--rojo:hover {
+  background-color: var(--equalHover);
+}
+.formulario__igual {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */

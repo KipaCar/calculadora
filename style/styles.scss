@@ -1,0 +1,304 @@
+
+@import '_color';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--mainBackground);
+    font-family: "League Spartan", sans-serif ;
+
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 375px;
+    align-items: center;
+    margin: auto;
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        width: 78%;
+        align-items: center;
+    }
+    &__calc{
+        color: var(--text3);
+        font-size: 1.2rem;
+      
+    }
+    &__number-theme{
+        display:flex;
+        justify-content: center;
+        gap: 0.5rem;
+        color: var(--text3);
+    }
+    &__radio{
+        padding: 3px 7px;
+        background: var(--screenBackground);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        gap: 0.2rem; //Lo pongo para separar los input
+    }
+    &__theme{
+        position: absolute;
+        left: -57px;
+        color: var(--text3);
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        &--uno{
+            cursor: pointer;
+            appearance: none;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin: 0;
+            // &:hover{
+            //     background: var(--keyBackgroundToggle);
+            //     transition-duration: 500ms;
+            // }
+            &:checked{
+                background-color: var(--keyBackgroundToggle);
+                transition-duration: 500ms;
+                cursor: default;
+            }  
+        }
+        &--dos{
+            cursor: pointer;
+            appearance: none;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin: 0;
+            &:hover{
+                // background: #ca55024b;
+                transition-duration: 500ms;
+            }
+            &:checked{
+                background-color: var(--keyBackgroundToggle);
+                transition-duration: 500ms;
+                cursor: default;
+            }
+        }
+        &--tres{
+            cursor: pointer;
+            appearance: none;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin: 0;
+            // &:hover{
+            //     background-color: var(--keyBackgroundToggle);
+            //     transition-duration: 500ms;
+            // }
+            &:checked{
+                background:  var(--keyBackgroundToggle);;
+                transition-duration: 100ms;
+                cursor: default;
+            }
+
+        }
+    }
+    &__resultado{
+        text-align: end;
+        color: var(--text3);
+        background-color: var(--screenBackground);
+        padding: 1.2rem;
+        border: none;
+        border-radius: 0.5rem;
+        width: 80%;
+        margin: 1rem;
+        font-size: 32px;
+        font-family: 'League Spartan', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 94px;
+        &--operaciones{
+            font-size: 20px;
+            opacity: 0;
+        }
+        &--final{
+            font-size: 32px;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+.formulario{
+    background-color: var(--toggleBackgroundKeypadBackground);
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    &__bloque{
+        grid-template-columns: repeat(4,1fr);
+        display: grid;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+    &__boton{
+        font-family: 'League Spartan', sans-serif;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(2px);
+        }
+       &--blanco{
+        font-size: 32px;
+        background-color: var(--keyBackground2);
+        color:  var(--text2);
+        box-shadow: 0px 4px 0px var(--keyShadow3);
+        &:hover{
+            background-color: var( --hoverKey);
+        }
+       }
+        &--azul{
+            color:var(--text1);
+            background-color: var(--keyBackground);
+            box-shadow: 0px 4px 0px var(--keyShadow);
+            padding: 1rem;
+            &:hover{
+                background-color: var(--hoverDelReset);
+            }
+        }
+        &--rojo{
+                color:var(--text1);
+                background-color: var(--keyBackgroundToggle);
+                box-shadow: 0px 4px 0px var(--keyShadow2);
+                padding: 1rem;
+                &:hover{
+                    background-color: var(--equalHover);
+                   
+                }
+        
+        }
+    }
+    &__igual{
+        grid-template-columns: repeat(2,1fr);
+        display: grid;
+        
+        gap: 0.5rem;
+    }
+}
+
+// @media (prefers-color-scheme: light) {
+// 	body {
+// 		background-color: $lightGrayMmainBackground;
+//     }
+	
+// @media (prefers-color-scheme: dark) {
+// 	body {
+// 		background-color:  $veryDarkVioletMainBackgroundk;
+// 	}
+// }
+// }
+// body.oscuro{
+//     background-color: $lightGrayMmainBackground;
+// }
+
+// body .theme-two{
+//     background-color:white; 
+// }
+
+//     .calculadora__calc.theme-two{
+//         color: $veryDarkGrayishYellow; 
+//     }
+//     .calculadora__number-theme.theme-two{
+//         color: $veryDarkGrayishYellow;
+//     }
+//     // &__radio.theme-two{
+//     //     background: $darkGrayishOrangeKeyShadow;
+//     // }
+//     // &__theme.theme-two{
+//     //     color: $grayishRedToggleBackgroundKeypadBackground;
+//     //     &--uno.theme-two{
+//     //         &:hover.theme-two{
+//     //             background: #d03f2f46;
+              
+//     //         }
+//     //         &:checked.theme-two{
+//     //             background: var(--equals-bg);
+               
+//     //         }  
+//     //     }
+//     //     &--dos{
+//     //         &:hover{
+//     //             background: #ca55024b;
+    
+//     //         }
+//     //         &:checked{
+//     //             background: $darkOrangeKeyShadow;
+             
+//     //         }
+//     //     }
+//     //     &--tres{
+     
+//     //         &:hover{
+//     //             background: #00e0d146;
+//     //         }
+//     //         &:checked{
+//     //             background: $pureCyanKeyBackgroundToggle;
+//     //         }
+
+//     //     }
+//     // }
+//     // &__resultado{
+     
+//     //     color: var(--text2);
+//     //     background-color: $darkGrayishOrangeKeyShadow;
+//     // }
+
+// // .formulario.theme-two{
+// //     background-color: $darkGrayishOrangeKeyShadow;
+// //        &--blanco{
+// //         color:  $darkGrayishOrangeKeyShadow;
+// //         box-shadow: 0px 4px 0px ($grayishOrangeKeyShadow);
+// //         &:hover{
+// //             background-color: $white;
+// //         }
+// //        }
+// //         &--azul{
+// //             color:$white;
+// //             background-color: var(--keyBackground2);
+// //             box-shadow: 0px 4px 0px ($desaturatedDarkBlue-key-shadow);
+            
+// //         }
+// //         &--rojo{
+// //                 color:$white;
+// //                 background-color: $redKeyBackgroundToggle;
+// //                 box-shadow: 0px 4px 0px ($darkRed-key-shadow);
+    
+// //                 &:hover{
+// //                     background-color: ($redKeyBackgroundToggle 0.08);
+                   
+// //                 }
+        
+// //         }
+// //     }
+   
+
+//     body.theme-three{
+//         background-color:red;
+//     }
+//  .calculadora__calc.theme-two{
+//         color: blue; 
+//     }
+//     .calculadora__number-theme.theme-two{
+//         color: $veryDarkGrayishYellow;
+//     }
