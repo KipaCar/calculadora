@@ -28,9 +28,9 @@
     </div>
     <div class="calculadora__radio">
       <span class="calculadora__theme theme">Theme</span>
-      <input type="radio" class="calculadora__theme--uno button" id="theme-uno"  checked>
-      <input type="radio"class="calculadora__theme--dos button" id="theme-dos" >
-      <input type="radio"class="calculadora__theme--tres button" id="theme-tres" >
+      <input type="radio" class="calculadora__theme--uno button" id="theme-uno" aria-labelledby="elegir tema" checked>
+      <input type="radio"class="calculadora__theme--dos button" id="theme-dos"  aria-labelledby="elegir tema" >
+      <input type="radio"class="calculadora__theme--tres button" id="theme-tres"  aria-labelledby="elegir tema">
     </div>
   </div>
 </div>
@@ -40,31 +40,31 @@
     <span id="resultado-final" class="calculadora__resultado--final" ></span>
   </div>
   <form class="formulario" action="" name="calculadora">
-    <div  id="botones-generales" class="formulario__bloque">
+    <div  class="formulario__bloque">
       <button id="7" class="formulario__boton  formulario__boton--blanco" >7</button>
       <button id="8" class="formulario__boton  formulario__boton--blanco" >8</button>
       <button id="9" class="formulario__boton  formulario__boton--blanco" >9</button>
       <button id="del"class="formulario__boton formulario__boton--azul">DEL</button>
     </div>
-    <div  id="botones-generales" class="formulario__bloque">
+    <div  class="formulario__bloque">
       <button id="4" class="formulario__boton formulario__boton--blanco" >4</button>
       <button id="5" class="formulario__boton formulario__boton--blanco" >5</button>
       <button id="6" class="formulario__boton formulario__boton--blanco" >6</button>
       <button id="sumar" class="formulario__boton formulario__boton--blanco" >+</button>
     </div>
-    <div  id="botones-generales" class="formulario__bloque" >
+    <div  class="formulario__bloque" >
       <button id="1" class="formulario__boton formulario__boton--blanco" >1</button>
       <button id="2" class="formulario__boton formulario__boton--blanco" >2</button>
       <button id="3" class="formulario__boton formulario__boton--blanco" >3</button>
       <button id="-" class="formulario__boton formulario__boton--blanco" >-</button>
     </div>
-    <div id="botones-generales"  class="formulario__bloque">
+    <div   class="formulario__bloque">
       <button id="."  class="formulario__boton formulario__boton--blanco" >.</button>
       <button id="0" class="formulario__boton formulario__boton--blanco" >0</button>
       <button id="/" class="formulario__boton formulario__boton--blanco" >/</button>
       <button id="x" class="formulario__boton formulario__boton--blanco" >x</button>
     </div>
-    <div  id="botones-generales" class="formulario__igual">
+    <div   class="formulario__igual">
       <button id="reset"class="formulario__boton formulario__boton--azul">RESET</button>
       <button id="igual"class="formulario__boton formulario__boton--rojo" >=</button>
     </div>
